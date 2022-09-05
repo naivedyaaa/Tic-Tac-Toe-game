@@ -1,0 +1,85 @@
+body,*,div{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h2{
+    font-size: 55px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+.container{
+    display: grid;
+    /* we made the position of the container relative so that other child element can use this position as relative */
+    position: relative;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 0;
+    height: fit-content;
+    width: fit-content;
+    margin: auto;
+}
+.box{
+    width: 10vw;
+    height: 10vw;
+    text-align: center;
+}
+
+.box:hover{
+    cursor: pointer;
+    background-color: #f7dbd6;
+}
+
+.block{
+    display: block ;
+}
+
+.boxText{
+    font-size: 8vw;
+    color: red;
+}
+
+.line{
+    width: 0;
+    height: 14px;
+    background-color: red;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+
+.winner{
+    text-align: center;
+    font-size: 43px;
+    padding: 37px 0 16px 0;
+}
+
+.bl{
+    border-left:2px solid black ;
+}
+
+.bb{
+    border-bottom:2px solid black ;
+}
+
+.br{
+    border-right:2px solid black ;
+}
+
+.bt{
+    border-top:2px solid black ;
+}
+
+.reset{
+    font-size: 30px;
+    margin: auto;
+    display: block;
+    background-color: greenyellow;
+    border-radius: 27px;
+    padding: 3px 18px;
+}
+
+.reset:hover{
+    cursor: pointer;
+    background-color: rgb(138, 216, 21);
+}
