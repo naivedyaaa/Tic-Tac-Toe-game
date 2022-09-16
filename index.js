@@ -13,7 +13,7 @@ const winChecker=()=>{
             console.log(boxtexts[element[0]].innerText)
             flagwon=true
             document.querySelector(".winner").innerText=(`${boxtexts[element[0]].innerText} is the Winner`)
-            document.querySelector(".line").style.width='436px'
+            document.querySelector(".line").style.width='32vw'
             document.querySelector(".line").style.transform= `translate(${element[4]}vw, ${element[5]}vw) rotate(${element[3]}deg)`
         }
     })
